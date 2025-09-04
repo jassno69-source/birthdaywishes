@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Ttiksha</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 🎥 Background Video -->
+  <video autoplay muted loop playsinline id="bgVideo">
+    <source src="videos/background.mp4" type="video/mp4">
+  </video>
+
+  <div class="main-layout">
+    <!-- 🎂 Left Section (Cake) -->
+    <div class="flowers-section">
+      <div class="cake-container">
+        <div class="cake" id="cake">
+          <img src="img/cake.png" alt="Birthday Cake" class="cake-img">
+          <div class="candle-flame" id="flame"></div>
+        </div>
+
+        <!-- 🔪 Knife -->
+        <img src="img/knife.png" alt="Knife" class="knife" id="knife">
+
+        <!-- 🎂 DOB -->
+        <p id="dobText" class="dob-text" style="display:none;">DOB: 12/09/2004 🎂</p>
+
+        <!-- 🎉 Cut Cake Button -->
+        <button id="cutCakeBtn">Cut Cake 🎉</button>
+      </div>
+    </div>
+
+    <!-- 🎁 Right Section (Wishes) -->
+    <div class="wishes-section">
+      <h1 class="birthday-heading">🎉 Happy Birthday Ttiksha 🎂</h1>
+      <p class="birthday-message">
+        Wishing you a day filled with love, laughter, and beautiful memories 💖
+      </p>
+      <div class="sketch-frame">
+        <img src="img/tt.jpg" alt="Ttiksha Sketch">
+      </div>
+    </div>
+  </div>
+
+  <!-- 🎈 Balloons Container -->
+  <div id="balloon-container"></div>
+
+  <!-- 🎵 Celebration Song -->
+  <audio id="cutSound" src="sounds/celebration.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
